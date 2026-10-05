@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1115" />
+  <title>SONORA — 音乐流派发展地图</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <canvas id="atlas" aria-label="可交互的三维音乐流派地图"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="SONORA 音乐地图主页">
+      <span class="brand-mark"><i></i><i></i><i></i><i></i><i></i></span>
+      <span><strong>SONORA</strong><small>ATLAS OF SOUND</small></span>
+    </a>
+    <div class="top-meta"><span class="live-dot"></span><span id="nodeCount">正在构建声谱</span><b>·</b><span>深空档案 <i>01 / 10</i></span></div>
+    <div class="top-actions"><button class="icon-btn" id="resetView" title="重置视角" aria-label="重置视角">↺</button><button class="icon-btn help-btn" id="helpBtn" title="操作说明" aria-label="操作说明">?</button></div>
+  </header>
+
+  <main>
+    <aside class="panel left-panel">
+      <div class="panel-head"><div><span class="eyebrow">探索档案</span><h1>音乐的<br /><em>演化图谱</em></h1></div><span class="compass">N<br /><small>↑</small></span></div>
+      <p class="intro">从古老仪式到数字声景。旋转时间之塔，沿着一条流派的回声，追踪声音如何彼此改变。</p>
+      <label class="search-wrap"><span class="search-icon">⌕</span><input id="search" type="search" placeholder="搜索流派 · e.g. jazz" autocomplete="off"/><kbd>↵</kbd></label>
+      <div class="section-title"><span>分类图层</span><span id="visibleCount">620 / 620</span></div>
+      <div class="category-list" id="categoryFilters"></div>
+      <div class="panel-foot"><span class="mini-orbit">◌</span><span>拖动旋转 <b>·</b> 滚轮缩放<br/>右键拖动平移</span></div>
+    </aside>
+
+    <section class="map-caption" aria-live="polite">
+      <span class="caption-line"></span><span id="mapEra">声谱全景</span><span id="mapYear">—</span>
+    </section>
+
+    <aside class="panel right-panel" id="detailPanel">
+      <div class="detail-top"><span class="eyebrow">流派档案 <i>GENRE FILE</i></span><button class="close-detail" id="clearSelection" title="关闭详情">×</button></div>
+      <div class="detail-orbit" id="detailOrbit"><span></span><span></span><b>♪</b></div>
+      <div class="detail-title"><span id="detailCategory" class="category-tag">流派</span><h2 id="detailName">沿着声音<br/>开始探索</h2><p id="detailSub">点击任意光点，打开流派档案。</p></div>
+      <div class="detail-rule"></div>
+      <div class="detail-stats"><div><small>约形成</small><strong id="detailYear">—</strong></div><div><small>所在时期</small><strong id="detailEra">—</strong></div><div><small>声音家族</small><strong id="detailFamily">—</strong></div></div>
+      <div class="influence-block"><div class="section-title"><span>回声与影响</span><span id="relationCount">ILLUSTRATIVE</span></div><div id="relations" class="relation-list"><span class="empty-rel">选择一个节点查看示意关系</span></div></div>
+      <div class="source-note"><span class="source-pin"></span><p>流派名称来自 MusicBrainz 快照与补充清单，年代为近似估算。影响线为人工整理的示意关系；其余辅助线表示同类邻近关联。</p></div>
+    </aside>
+
+    <div class="toast" id="toast" role="status"></div>
+    <div class="help-popover" id="helpPopover" hidden><button id="closeHelp" aria-label="关闭">×</button><strong>在声谱中移动</strong><p>左键拖动旋转 · 滚轮缩放 · 右键拖动平移<br/>悬停查看流派名称 · 点击光点打开档案<br/>点击底部时代定位对应年代</p></div>
+  </main>
+
+  <footer class="timeline-shell">
+    <div class="timeline-head"><span><b>时间轴</b><small>由低至高 · 每一圈是一层时代</small></span><span class="relation-coverage" id="relationCoverage">所有节点都连接在声谱中</span></div>
+    <div class="timeline" id="timeline"></div>
+    <div class="timeline-ends"><span>远古回响</span><span>此刻 · 2025</span></div>
+  </footer>
+
+  <div class="tooltip" id="tooltip" role="tooltip"></div>
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js"}}</script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

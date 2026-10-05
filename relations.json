@@ -1,0 +1,287 @@
+[
+  {
+    "from": "ancient music",
+    "to": "medieval music",
+    "kind": "传承"
+  },
+  {
+    "from": "gregorian chant",
+    "to": "medieval music",
+    "kind": "礼仪传统"
+  },
+  {
+    "from": "medieval music",
+    "to": "renaissance music",
+    "kind": "发展"
+  },
+  {
+    "from": "renaissance music",
+    "to": "baroque music",
+    "kind": "发展"
+  },
+  {
+    "from": "baroque music",
+    "to": "classical music",
+    "kind": "形式演进"
+  },
+  {
+    "from": "classical music",
+    "to": "romantic music",
+    "kind": "发展"
+  },
+  {
+    "from": "romantic music",
+    "to": "impressionism",
+    "kind": "转化"
+  },
+  {
+    "from": "baroque music",
+    "to": "opera",
+    "kind": "舞台传统"
+  },
+  {
+    "from": "chamber music",
+    "to": "classical music",
+    "kind": "室内乐"
+  },
+  {
+    "from": "ragtime",
+    "to": "jazz",
+    "kind": "节奏影响"
+  },
+  {
+    "from": "blues",
+    "to": "jazz",
+    "kind": "共同根源"
+  },
+  {
+    "from": "blues",
+    "to": "rock and roll",
+    "kind": "共同根源"
+  },
+  {
+    "from": "delta blues",
+    "to": "blues",
+    "kind": "地域源流"
+  },
+  {
+    "from": "country blues",
+    "to": "blues",
+    "kind": "地域源流"
+  },
+  {
+    "from": "chicago blues",
+    "to": "electric blues",
+    "kind": "电声化"
+  },
+  {
+    "from": "electric blues",
+    "to": "rock and roll",
+    "kind": "影响"
+  },
+  {
+    "from": "country",
+    "to": "rock and roll",
+    "kind": "共同根源"
+  },
+  {
+    "from": "rock and roll",
+    "to": "rock",
+    "kind": "发展"
+  },
+  {
+    "from": "rock",
+    "to": "surf rock",
+    "kind": "分支"
+  },
+  {
+    "from": "rock",
+    "to": "garage rock",
+    "kind": "分支"
+  },
+  {
+    "from": "rock",
+    "to": "psychedelic rock",
+    "kind": "分支"
+  },
+  {
+    "from": "rock",
+    "to": "hard rock",
+    "kind": "分支"
+  },
+  {
+    "from": "rock",
+    "to": "punk rock",
+    "kind": "分支"
+  },
+  {
+    "from": "rock",
+    "to": "progressive rock",
+    "kind": "分支"
+  },
+  {
+    "from": "rock",
+    "to": "folk rock",
+    "kind": "融合"
+  },
+  {
+    "from": "rock and roll",
+    "to": "rockabilly",
+    "kind": "融合"
+  },
+  {
+    "from": "hard rock",
+    "to": "heavy metal",
+    "kind": "影响"
+  },
+  {
+    "from": "blues",
+    "to": "heavy metal",
+    "kind": "影响"
+  },
+  {
+    "from": "punk rock",
+    "to": "post-punk",
+    "kind": "延展"
+  },
+  {
+    "from": "punk rock",
+    "to": "hardcore punk",
+    "kind": "分支"
+  },
+  {
+    "from": "post-punk",
+    "to": "new wave",
+    "kind": "平行发展"
+  },
+  {
+    "from": "alternative rock",
+    "to": "grunge",
+    "kind": "场景关联"
+  },
+  {
+    "from": "psychedelic rock",
+    "to": "progressive rock",
+    "kind": "影响"
+  },
+  {
+    "from": "blues",
+    "to": "rhythm and blues",
+    "kind": "影响"
+  },
+  {
+    "from": "rhythm and blues",
+    "to": "soul",
+    "kind": "发展"
+  },
+  {
+    "from": "gospel",
+    "to": "soul",
+    "kind": "共同根源"
+  },
+  {
+    "from": "soul",
+    "to": "funk",
+    "kind": "节奏影响"
+  },
+  {
+    "from": "soul",
+    "to": "disco",
+    "kind": "影响"
+  },
+  {
+    "from": "soul",
+    "to": "neo soul",
+    "kind": "复兴"
+  },
+  {
+    "from": "swing",
+    "to": "bebop",
+    "kind": "演进"
+  },
+  {
+    "from": "bebop",
+    "to": "hard bop",
+    "kind": "延展"
+  },
+  {
+    "from": "bebop",
+    "to": "cool jazz",
+    "kind": "并行发展"
+  },
+  {
+    "from": "hard bop",
+    "to": "modal jazz",
+    "kind": "探索"
+  },
+  {
+    "from": "jazz",
+    "to": "free jazz",
+    "kind": "实验"
+  },
+  {
+    "from": "jazz",
+    "to": "jazz fusion",
+    "kind": "电声融合"
+  },
+  {
+    "from": "jazz",
+    "to": "bossa nova",
+    "kind": "融合"
+  },
+  {
+    "from": "jazz",
+    "to": "smooth jazz",
+    "kind": "分支"
+  },
+  {
+    "from": "blues",
+    "to": "country blues",
+    "kind": "地域分支"
+  },
+  {
+    "from": "folk music",
+    "to": "folk rock",
+    "kind": "融合"
+  },
+  {
+    "from": "samba",
+    "to": "bossa nova",
+    "kind": "节奏源流"
+  },
+  {
+    "from": "son cubano",
+    "to": "salsa",
+    "kind": "源流"
+  },
+  {
+    "from": "electronic music",
+    "to": "ambient music",
+    "kind": "实验脉络"
+  },
+  {
+    "from": "ambient music",
+    "to": "ambient techno",
+    "kind": "融合"
+  },
+  {
+    "from": "electronic music",
+    "to": "synth-pop",
+    "kind": "合成器流行"
+  },
+  {
+    "from": "new wave",
+    "to": "synth-pop",
+    "kind": "并行发展"
+  },
+  {
+    "from": "pop",
+    "to": "dance-pop",
+    "kind": "舞曲化"
+  },
+  {
+    "from": "punk rock",
+    "to": "emo",
+    "kind": "影响"
+  }
+]
